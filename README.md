@@ -9,15 +9,19 @@ Great work last week! You've mastered data manipulation in your Expense Tracker.
 
 ### Project Setup:
 **1.** Create a well-structured Node.js project directory with your server-side code.
+
 **2.** Install required dependencies including express, mysql, body-parser, and a password hashing library (e.g., bcryptjs).
+
 **3.** Configure a connection to your MySQL database.
 
 ### Database Schema:
 **1.** Utilize an existing Users table with columns for id (primary key), username (unique), and password (hashed).
+
 **2.** Create an Expenses table with columns for id (primary key), user_id (foreign key referencing Users.id), amount, date, and category.
 
 ### User Authentication:
 **1.** Implement user registration and login functionalities (covered in previous assignment).
+
 **2.** Securely store passwords using hashing techniques.
 
 ### Expense Management:
@@ -36,7 +40,9 @@ Implement functionalities for authenticated users to edit or delete existing exp
 ### Deliverables:
 
 **1.** A well-documented Node.js project directory with your server code.
+
 **2.** A clear README.md file explaining project setup, dependencies, functionalities, and instructions to run the application.
+
 **3.** A functional Node.js server demonstrating the required functionalities and interaction with the MySQL database.
 
 ### Bonus (Optional)
