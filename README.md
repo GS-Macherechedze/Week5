@@ -1,38 +1,45 @@
 # Week 5: Databases and Web Applications - Bridging the Gap 
 
-Great work last week! You've mastered data manipulation in your Expense Tracker. This week, we'll delve into the exciting connection between databases and web applications, even though we won't be coding the actual connection yet.
+Great work last week! You've mastered data manipulation in your Expense Tracker. This week, we'll develop a web application using Node.js, Express, and MySQL to manage personal expenses. The application should provide user authentication and functionalities for adding, viewing, and (optionally) editing/deleting expenses.
 
-## Understanding the Connection:
+## Submission: 
+* **Clone** this repo Not ~~Fork~~
+* You have been given starter code, use it , modify it as you work on this project
+* Test and commit your changes **on this repo**
 
-Imagine you're browsing a social media platform. When you see posts from your friends, a web application interacts with a database in the background, retrieving relevant data (posts, comments, etc.). This magic happens through a powerful connection, but how?
+### Project Setup:
+**1.** Create a well-structured Node.js project directory with your server-side code.
+**2.** Install required dependencies including express, mysql, body-parser, and a password hashing library (e.g., bcryptjs).
+**3.** Configure a connection to your MySQL database.
 
-## Exploring Database Options:
+### Database Schema:
+**1.** Utilize an existing Users table with columns for id (primary key), username (unique), and password (hashed).
+**2.** Create an Expenses table with columns for id (primary key), user_id (foreign key referencing Users.id), amount, date, and category.
 
-There's a range of database server options available, each with its strengths:
+### User Authentication:
+**1.** Implement user registration and login functionalities (covered in previous assignment).
+**2.** Securely store passwords using hashing techniques.
 
-MySQL: A widely used open-source relational database management system (RDBMS) known for its flexibility and ease of use.
+### Expense Management:
+**1.** Add Expense: Develop a functionality for authenticated users to add new expenses with details like amount, date, and category.
 
-PostgreSQL: Another powerful open-source RDBMS offering advanced features like object-relational capabilities.
+### View Expenses: 
+**1.** Allow users to view their past expenses filtered by their user ID.
 
-Microsoft SQL Server: A robust commercial RDBMS solution from Microsoft, often used in enterprise environments.
+### (Optional): 
+Implement functionalities for authenticated users to edit or delete existing expenses (consider authorization and confirmation steps).
 
-Oracle Database: A high-performance commercial RDBMS known for its scalability and security features.
+### Security:
+**1.** Emphasize secure password storage (hashed, not plain text).
+**2.** Consider user authentication and authorization for accessing expense functionalities.
 
-Node.js: While not strictly a database server, Node.js is a popular server-side JavaScript runtime environment often used for building web applications. Node.js can interact with various databases using libraries and frameworks.
+### Deliverables:
 
-## Learning the Universal Language - SQL:
+**1.** A well-documented Node.js project directory with your server code.
+**2.** A clear README.md file explaining project setup, dependencies, functionalities, and instructions to run the application.
+**3.** A functional Node.js server demonstrating the required functionalities and interaction with the MySQL database.
 
-Regardless of the database server, SQL (Structured Query Language) acts as the common language for communication. It allows applications to interact with databases and perform various operations like:
-
-Retrieving Data: SELECT statements fetch specific data from database tables.
-
-Inserting Data: INSERT statements add new records to the database.
-
-Updating Data: UPDATE statements modify existing data within a database.
-
-Deleting Data: DELETE statements remove unwanted records from the database.
-
-## Questions (2 hours):
+### Bonus (Optional)
 
 1.1. Database Server Comparison:  
 Create a table comparing the following database server options (focusing on its role as a web application environment): 
@@ -49,9 +56,4 @@ Create a table comparing the following database server options (focusing on its 
 3. Key Features
 4. Ease of Use
 
-## Bonus: Hands-on SQL Practice (Optional):
-
-Hands-on SQL Practice: 
-
-Explore Node.js database SQL interaction capabilities and writing basic SQL queries. Write at least three SELECT statements to retrieve data from the 5week_movies.sql database found in this repo. 
-
+* Upload the table in a document or as a picture onto this repo. 
