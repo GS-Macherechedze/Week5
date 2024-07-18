@@ -15,7 +15,7 @@ Great work last week! You've mastered data manipulation in your Expense Tracker.
 **3.** Configure a connection to your MySQL database.
 
 ### Database Schema:
-**1.** Utilize an existing Users table with columns for id (primary key), username (unique), and password (hashed).
+**1.** Create Users table with columns for id (primary key), username (unique), and password (hashed).
 
 **2.** Create an Expenses table with columns for id (primary key), user_id (foreign key referencing Users.id), amount, date, and category.
 
